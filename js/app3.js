@@ -1,10 +1,14 @@
-let ATM_amount = 5000;
-let withdraw = prompt(`Enter the amount of money you want to withdraw`);
-let acc  = 4000;
-if(ATM_amount >= withdraw){
-    acc = acc - withdraw;
-    console.log(`withdrawn: `,withdraw,` amount in you acc: `,acc);
-}else{
-    console.log(`Not enough money`);
+let array = [];
+let n;
+n=prompt("Enter the amount of string you want to use");
+function input(array,n){
+    for(let i=0;i<n;i++){   
+        array[i] = prompt(`Enter string number ${i+1}`);
+    }
+    alert(array.join(' '));
 }
 
+input(array,n);
+
+
+// ex 3

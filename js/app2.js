@@ -1,11 +1,24 @@
-// part 2 
-let human = prompt(`Enter Human age`);
-let dog;
-function dogo(human,dog){
-    dog = human * 7;
-return dog;
+let arr = [5,4,6,8,9];
+let result=0;
+function sum(array,result){
+    for(let i=0;i<array.length;++i){
+        result+=array[i];
+    }
+    console.log(result);
 }
-console.log("Dog age is ",dogo(human,dog));
-human = dogo(human,dog) / 7; // its the same i dont get the bonus question sorry 
-console.log("human age is ",human);
 
+sum(arr,result);
+// bonus 
+validateNumber(arr); 
+function validateNumber(array){
+    for(let i=0;i<array.length;i++){
+        if(!isNaN(array[i])){
+            console.log(array[i]);
+        }else {
+            console.log("Error Not a number");
+            break;
+        }
+    }
+}
+
+// ex 2

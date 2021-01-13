@@ -1,13 +1,8 @@
-// part 1 
-function pr(name){
-    return typeof name;
+function tellStory(name,mood,activity){
+    let string = ` This is ${name}. ${name} is a nice person. Today they are ${mood}. They are ${activity} all day. The end.`
+    return string;
 }
-let string = pr("ismail");
-let num = parseInt(string);
-let bool = !!parseInt(string);
-console.log(typeof string);
-console.log(typeof bool);
- console.log(typeof num);
-string = undefined;
-console.log(string);
-// i dont know to to convert string to object sorry :(
+
+console.log(tellStory("Ismail","nice","active"));
+
+//ex 1
